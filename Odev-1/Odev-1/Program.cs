@@ -47,6 +47,8 @@ namespace Odev_1
             Console.Write("Bir cümle yazınız: ");
             string cumle = Console.ReadLine();
             int kelimeSayisi = KelimeSayisi(cumle);
+            int harfSayisi = HarfSayisi(cumle);
+            Console.WriteLine("Kelime Sayısı = {0}, Harf Sayısı = {1}",kelimeSayisi, harfSayisi);
         }
 
         public static void CiftSayiBul(int[] dizi)
