@@ -30,20 +30,19 @@ namespace Functions
         {
             return (deger1 + deger2);
         }
-
-        class Metotlar
+    }
+    class Metotlar
+    {
+        public void EkranaYazdir(string veri)
         {
-            public void EkranaYazdir(string veri)
-            {
-                Console.WriteLine(veri);
-            }
+            Console.WriteLine(veri);
+        }
 
-            public int ArttirVeTopla(int deger1, int deger2)
-            {
-                deger1 += 1;
-                deger2 += 1;
-                return deger1 + deger2;
-            }
+        public int ArttirVeTopla(int deger1, int deger2)
+        {
+            deger1 += 1;
+            deger2 += 1;
+            return deger1 + deger2;
         }
     }
 }
