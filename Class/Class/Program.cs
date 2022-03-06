@@ -33,6 +33,10 @@ namespace Class
             calisan2.No = 25646789;
             calisan2.Departman = "Satın Alma";
             calisan2.CalisanBilgileri();
+
+            Console.WriteLine("***** Çalışan 3 *****");
+            Calisan calisan3 = new Calisan("Emre Kaan","Seylim");
+            calisan3.CalisanBilgileri();
         }
     }
 
