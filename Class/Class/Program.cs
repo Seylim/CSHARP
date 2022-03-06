@@ -9,11 +9,11 @@ namespace Class
             //Söz dizimi
             //class SınıfAdı
             //{
-                //[Erişim Belirleyici] [Veri Tipi] ÖzellikAdı
-                //[Erişim Belirleyici] [Geri Dönüş Tipi] MetotAdı([Parametre Listesi])
-                //{
-                    //Metot Komutları
-                //}
+            //[Erişim Belirleyici] [Veri Tipi] ÖzellikAdı
+            //[Erişim Belirleyici] [Geri Dönüş Tipi] MetotAdı([Parametre Listesi])
+            //{
+            //Metot Komutları
+            //}
             //}
 
             //Erişim Belirleyiciler
@@ -22,13 +22,11 @@ namespace Class
             // * internal
             // * protected
 
-            Calisan calisan1 = new Calisan();
-            calisan1.Ad = "Ayşe";
-            calisan1.Soyad = "Kara";
-            calisan1.No = 23425634;
-            calisan1.Departman = "İnsan Kaynakları";
+            Console.WriteLine("***** Çalışan 1 *****" );
+            Calisan calisan1 = new Calisan("Ayşe","Kara", 23425634, "İnsan Kaynakları");
             calisan1.CalisanBilgileri();
 
+            Console.WriteLine("***** Çalışan 2 *****");
             Calisan calisan2 = new Calisan();
             calisan2.Ad = "Deniz";
             calisan2.Soyad = "Arda";
@@ -44,6 +42,25 @@ namespace Class
         public string Soyad;
         public int No;
         public string Departman;
+
+        public Calisan(string ad, string soyad, int no, string departman)
+        {
+            this.Ad = ad;
+            this.Soyad = soyad;
+            this.No = no;
+            this.Departman = departman;
+        }
+
+        public Calisan(string ad, string soyad)
+        {
+            this.Ad = ad;
+            this.Soyad = soyad;
+        }
+
+        public Calisan()
+        {
+
+        }
 
         public void CalisanBilgileri()
         {
